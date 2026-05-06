@@ -1,0 +1,369 @@
+[0.548s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.548s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fbcdcb7c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbcfc0490>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbcfc0490>>, mixin_verb=('build',))
+[1.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.327s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/glad_ws'
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.401s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore'
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ignore_ament_install'
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_pkg']
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_pkg'
+[1.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['colcon_meta']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'colcon_meta'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extensions ['ros']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup) by extension 'ros'
+[1.416s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bringup' with type 'ros.ament_cmake' and name 'bringup'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extension 'ignore'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extension 'ignore_ament_install'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extensions ['colcon_pkg']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extension 'colcon_pkg'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extensions ['colcon_meta']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extension 'colcon_meta'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extensions ['ros']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src/glad_motor_controller) by extension 'ros'
+[1.423s] DEBUG:colcon.colcon_core.package_identification:Package 'src/glad_motor_controller' with type 'ros.ament_python' and name 'glad_motor_controller'
+[1.424s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['ignore', 'ignore_ament_install']
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ignore'
+[1.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ignore_ament_install'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['colcon_pkg']
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'colcon_pkg'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['colcon_meta']
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'colcon_meta'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['ros']
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ros'
+[1.429s] DEBUG:colcon.colcon_core.package_identification:Package 'src/myimu' with type 'ros.ament_python' and name 'myimu'
+[1.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extensions ['ignore', 'ignore_ament_install']
+[1.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extension 'ignore'
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extension 'ignore_ament_install'
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extensions ['colcon_pkg']
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extension 'colcon_pkg'
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extensions ['colcon_meta']
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extension 'colcon_meta'
+[1.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extensions ['ros']
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/rf2o_laser_odometry) by extension 'ros'
+[1.435s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rf2o_laser_odometry' with type 'ros.ament_cmake' and name 'rf2o_laser_odometry'
+[1.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[1.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[1.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[1.441s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[1.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.551s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /root/glad_ws/install
+[1.555s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 188 installed packages in /opt/ros/humble
+[1.559s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.696s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_args' from command line to 'None'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target' from command line to 'None'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.697s] Level 5:colcon.colcon_core.verb:set package 'bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.698s] DEBUG:colcon.colcon_core.verb:Building package 'bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/bringup', 'merge_install': False, 'path': '/root/glad_ws/src/bringup', 'symlink_install': False, 'test_result_base': None}
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_target' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.700s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.700s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.700s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.700s] Level 5:colcon.colcon_core.verb:set package 'glad_motor_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.700s] DEBUG:colcon.colcon_core.verb:Building package 'glad_motor_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/glad_motor_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/glad_motor_controller', 'merge_install': False, 'path': '/root/glad_ws/src/glad_motor_controller', 'symlink_install': False, 'test_result_base': None}
+[1.701s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_args' from command line to 'None'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_target' from command line to 'None'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_clean_cache' from command line to 'False'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_clean_first' from command line to 'False'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_force_configure' from command line to 'False'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'ament_cmake_args' from command line to 'None'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'catkin_cmake_args' from command line to 'None'
+[1.702s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.702s] DEBUG:colcon.colcon_core.verb:Building package 'myimu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/myimu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/myimu', 'merge_install': False, 'path': '/root/glad_ws/src/myimu', 'symlink_install': False, 'test_result_base': None}
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_args' from command line to 'None'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_target' from command line to 'None'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[1.704s] Level 5:colcon.colcon_core.verb:set package 'rf2o_laser_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.705s] DEBUG:colcon.colcon_core.verb:Building package 'rf2o_laser_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/rf2o_laser_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/rf2o_laser_odometry', 'merge_install': False, 'path': '/root/glad_ws/src/rf2o_laser_odometry', 'symlink_install': False, 'test_result_base': None}
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.706s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.707s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.707s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.707s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.707s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/rplidar_ros', 'merge_install': False, 'path': '/root/glad_ws/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[1.707s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.711s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.712s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/glad_ws/src/bringup' with build type 'ament_cmake'
+[1.712s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/glad_ws/src/bringup'
+[1.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.730s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.730s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.742s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/glad_ws/src/glad_motor_controller' with build type 'ament_python'
+[1.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('glad_motor_controller', 'ament_prefix_path')
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/ament_prefix_path.ps1'
+[1.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/ament_prefix_path.dsv'
+[1.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/ament_prefix_path.sh'
+[1.754s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.755s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.764s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/glad_ws/src/myimu' with build type 'ament_python'
+[1.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('myimu', 'ament_prefix_path')
+[1.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.ps1'
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.dsv'
+[1.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.sh'
+[1.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.783s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/glad_ws/src/rf2o_laser_odometry' with build type 'ament_cmake'
+[1.783s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/glad_ws/src/rf2o_laser_odometry'
+[1.784s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.785s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+[2.770s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/glad_ws/src/glad_motor_controller'
+[2.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.630s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/glad_ws/src/myimu'
+[3.631s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.631s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rf2o_laser_odometry -- -j4 -l4
+[3.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+[3.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup
+[3.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[3.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup
+[3.791s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup' for CMake module files
+[3.793s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup' for CMake config files
+[3.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[3.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[3.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[3.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[3.804s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/bin'
+[3.805s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/lib/pkgconfig/bringup.pc'
+[3.806s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/lib/python3.10/site-packages'
+[3.808s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/bin'
+[3.810s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.ps1'
+[3.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/bringup/share/bringup/package.dsv'
+[3.823s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.sh'
+[3.833s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.bash'
+[3.839s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.zsh'
+[3.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/bringup/share/colcon-core/packages/bringup)
+[3.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup)
+[3.849s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup' for CMake module files
+[3.852s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup' for CMake config files
+[3.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup', 'cmake_prefix_path')
+[3.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.ps1'
+[3.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.dsv'
+[3.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/bringup/share/bringup/hook/cmake_prefix_path.sh'
+[3.864s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/bin'
+[3.865s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/lib/pkgconfig/bringup.pc'
+[3.866s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/lib/python3.10/site-packages'
+[3.869s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/bringup/bin'
+[3.870s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.ps1'
+[3.874s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/bringup/share/bringup/package.dsv'
+[3.876s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.sh'
+[3.880s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.bash'
+[3.883s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/bringup/share/bringup/package.zsh'
+[3.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/bringup/share/colcon-core/packages/bringup)
+[3.888s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/glad_ws/src/rplidar_ros' with build type 'ament_cmake'
+[3.888s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/glad_ws/src/rplidar_ros'
+[3.892s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[4.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[4.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros
+[4.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rf2o_laser_odometry -- -j4 -l4
+[4.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rf2o_laser_odometry
+[4.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rf2o_laser_odometry)
+[4.625s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry' for CMake module files
+[4.627s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry' for CMake config files
+[4.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('rf2o_laser_odometry', 'cmake_prefix_path')
+[4.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.ps1'
+[4.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.dsv'
+[4.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.sh'
+[4.661s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib'
+[4.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rf2o_laser_odometry
+[4.665s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/bin'
+[4.666s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib/pkgconfig/rf2o_laser_odometry.pc'
+[4.668s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib/python3.10/site-packages'
+[4.670s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/bin'
+[4.674s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.ps1'
+[4.681s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv'
+[4.686s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.sh'
+[4.691s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.bash'
+[4.693s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.zsh'
+[4.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rf2o_laser_odometry/share/colcon-core/packages/rf2o_laser_odometry)
+[4.699s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rf2o_laser_odometry)
+[4.700s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry' for CMake module files
+[4.702s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry' for CMake config files
+[4.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('rf2o_laser_odometry', 'cmake_prefix_path')
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.ps1'
+[4.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.dsv'
+[4.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/hook/cmake_prefix_path.sh'
+[4.722s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib'
+[4.723s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/bin'
+[4.723s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib/pkgconfig/rf2o_laser_odometry.pc'
+[4.724s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/lib/python3.10/site-packages'
+[4.726s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rf2o_laser_odometry/bin'
+[4.728s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.ps1'
+[4.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv'
+[4.733s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.sh'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.bash'
+[4.737s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.zsh'
+[4.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rf2o_laser_odometry/share/colcon-core/packages/rf2o_laser_odometry)
+[4.744s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[4.746s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake module files
+[4.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros
+[4.753s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake config files
+[4.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[4.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[4.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[4.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[4.765s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib'
+[4.766s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[4.766s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[4.767s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[4.769s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[4.771s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[4.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[4.779s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[4.781s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[4.786s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[4.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[4.793s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[4.794s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake module files
+[4.797s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake config files
+[4.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[4.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[4.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[4.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[4.807s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib'
+[4.808s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[4.808s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[4.809s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[4.811s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[4.812s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[4.815s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[4.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[4.820s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[4.823s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[4.825s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/src/myimu': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[5.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/src/glad_motor_controller': PYTHONPATH=/root/glad_ws/build/glad_motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_motor_controller build --build-base /root/glad_ws/build/glad_motor_controller/build install --record /root/glad_ws/build/glad_motor_controller/install.log --single-version-externally-managed install_data
+[6.702s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu' for CMake module files
+[6.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/src/myimu' returned '0': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[6.708s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu' for CMake config files
+[6.712s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib'
+[6.715s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/bin'
+[6.718s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib/pkgconfig/myimu.pc'
+[6.720s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib/python3.10/site-packages'
+[6.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('myimu', 'pythonpath')
+[6.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.ps1'
+[6.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.dsv'
+[6.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.sh'
+[6.740s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/bin'
+[6.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myimu)
+[6.743s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.ps1'
+[6.752s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/myimu/share/myimu/package.dsv'
+[6.754s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.sh'
+[6.757s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.bash'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.zsh'
+[6.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/myimu/share/colcon-core/packages/myimu)
+[6.764s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller' for CMake module files
+[6.767s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller' for CMake config files
+[6.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/src/glad_motor_controller' returned '0': PYTHONPATH=/root/glad_ws/build/glad_motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_motor_controller build --build-base /root/glad_ws/build/glad_motor_controller/build install --record /root/glad_ws/build/glad_motor_controller/install.log --single-version-externally-managed install_data
+[6.772s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller/lib'
+[6.772s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller/bin'
+[6.773s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller/lib/pkgconfig/glad_motor_controller.pc'
+[6.774s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages'
+[6.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('glad_motor_controller', 'pythonpath')
+[6.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/pythonpath.ps1'
+[6.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/pythonpath.dsv'
+[6.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/hook/pythonpath.sh'
+[6.782s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/glad_motor_controller/bin'
+[6.782s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(glad_motor_controller)
+[6.783s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/package.ps1'
+[6.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/package.dsv'
+[6.787s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/package.sh'
+[6.789s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/package.bash'
+[6.791s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/glad_motor_controller/share/glad_motor_controller/package.zsh'
+[6.792s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/glad_motor_controller/share/colcon-core/packages/glad_motor_controller)
+[6.793s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.794s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.795s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.795s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.840s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.841s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.841s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.841s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.851s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[6.852s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.854s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.ps1'
+[6.859s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/glad_ws/install/_local_setup_util_ps1.py'
+[6.865s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.ps1'
+[6.871s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.sh'
+[6.876s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/glad_ws/install/_local_setup_util_sh.py'
+[6.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.sh'
+[6.883s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.bash'
+[6.886s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.bash'
+[6.891s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.zsh'
+[6.894s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.zsh'

@@ -1,0 +1,54 @@
+[0.991s] Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[1.319s] [  5%] Built target rplidar_client
+[1.336s] [ 52%] Built target rplidar_composition
+[1.365s] [100%] Built target rplidar_node
+[1.421s] Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[1.425s] Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros
+[1.442s] -- Install configuration: ""
+[1.449s] -- Execute custom install script
+[1.452s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[1.454s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[1.456s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[1.460s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[1.462s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[1.464s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[1.468s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[1.470s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[1.473s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[1.474s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[1.479s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[1.480s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[1.481s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[1.481s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[1.482s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[1.482s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[1.483s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[1.484s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[1.484s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[1.485s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[1.485s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[1.486s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[1.486s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[1.487s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[1.487s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[1.488s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[1.488s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[1.490s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[1.491s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[1.493s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[1.494s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[1.494s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[1.494s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[1.495s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[1.495s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[1.496s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[1.496s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[1.497s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[1.497s] -- Symlinking: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[1.526s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[1.529s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.531s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.533s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[1.536s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[1.539s] -- Up-to-date symlink: /root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[1.544s] Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros

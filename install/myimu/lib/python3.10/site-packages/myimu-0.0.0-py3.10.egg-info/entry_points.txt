@@ -1,0 +1,4 @@
+[console_scripts]
+imuodom = myimu.imuodom:main
+imupub = myimu.imupublisher:main
+

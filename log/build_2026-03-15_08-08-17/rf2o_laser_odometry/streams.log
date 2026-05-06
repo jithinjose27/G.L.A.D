@@ -1,0 +1,26 @@
+[1.789s] Invoking command in '/root/glad_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rf2o_laser_odometry -- -j4 -l4
+[2.031s] [ 40%] Built target rf2o_laser_odometry
+[2.048s] [100%] Built target rf2o_laser_odometry_node
+[2.109s] Invoked command in '/root/glad_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rf2o_laser_odometry -- -j4 -l4
+[2.125s] Invoking command in '/root/glad_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rf2o_laser_odometry
+[2.148s] -- Install configuration: ""
+[2.150s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node
+[2.152s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch
+[2.153s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/lidar_odom.launch.py
+[2.156s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py
+[2.156s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry
+[2.159s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry
+[2.160s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh
+[2.160s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv
+[2.161s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh
+[2.164s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv
+[2.165s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash
+[2.165s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh
+[2.166s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh
+[2.166s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv
+[2.167s] -- Installing: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv
+[2.174s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry
+[2.174s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake
+[2.174s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake
+[2.175s] -- Up-to-date: /root/glad_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml
+[2.180s] Invoked command in '/root/glad_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rf2o_laser_odometry

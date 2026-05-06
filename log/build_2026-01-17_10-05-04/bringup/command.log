@@ -1,0 +1,6 @@
+Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/bringup -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/bringup
+Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/bringup -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/bringup
+Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup
+Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup

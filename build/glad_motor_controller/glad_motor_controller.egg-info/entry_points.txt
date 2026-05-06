@@ -1,0 +1,3 @@
+[console_scripts]
+motor_driver = glad_motor_controller.motor_driver:main
+

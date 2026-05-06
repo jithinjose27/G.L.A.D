@@ -1,0 +1,20 @@
+laser_filter:
+  ros__parameters:
+    # FILTER 1: The Blindfold (Hides the black tower in the back)
+    filter1:
+      name: angle
+      type: laser_filters/LaserScanAngularBoundsFilterInPlace
+      params:
+        lower_angle: 1.5708      # <--- Starts keeping at -90 (Right)
+        upper_angle: -1.5708       # <--- Stops keeping at +90 (Left)
+
+    # FILTER 2: The Range Filter (Hides the chassis/wires in the front)
+    filter2:
+      name: range
+      type: laser_filters/LaserScanRangeFilter
+      params:
+        use_message_range_limits: false
+        lower_threshold: 0.20     # <--- Deletes anything closer than 35cm
+        upper_threshold: 12.0
+        lower_replacement_value: -.inf
+        upper_replacement_value: .inf

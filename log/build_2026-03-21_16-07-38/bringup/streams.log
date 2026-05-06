@@ -1,0 +1,37 @@
+[0.095s] Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_voice:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+[3.090s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.092s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.093s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.094s] -- Added test 'lint_cmake' to check CMake code style
+[3.095s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.097s] -- Added test 'xmllint' to check XML markup files
+[3.097s] -- Configuring done
+[3.098s] -- Generating done
+[3.098s] -- Build files have been written to: /root/glad_ws/build/bringup
+[3.099s] Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_voice:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/bringup -- -j4 -l4
+[3.125s] Invoking command in '/root/glad_ws/build/bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_voice:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup
+[3.156s] -- Install configuration: ""
+[3.162s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/launch
+[3.163s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/launch/sensorbringup.launch.py
+[3.167s] -- Installing: /root/glad_ws/install/bringup/share/bringup/launch/glad_nav2.launch.py
+[3.167s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/config
+[3.168s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/config/jithin_room.yaml
+[3.168s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/config/ekf_config.yaml
+[3.169s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/config/my_nav2_params.yaml
+[3.169s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/config/jithin_room.pgm
+[3.175s] -- Installing: /root/glad_ws/install/bringup/share/ament_index/resource_index/package_run_dependencies/bringup
+[3.177s] -- Installing: /root/glad_ws/install/bringup/share/ament_index/resource_index/parent_prefix_path/bringup
+[3.177s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/environment/ament_prefix_path.sh
+[3.178s] -- Installing: /root/glad_ws/install/bringup/share/bringup/environment/ament_prefix_path.dsv
+[3.178s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/environment/path.sh
+[3.191s] -- Installing: /root/glad_ws/install/bringup/share/bringup/environment/path.dsv
+[3.194s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/local_setup.bash
+[3.196s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/local_setup.sh
+[3.202s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/local_setup.zsh
+[3.210s] -- Installing: /root/glad_ws/install/bringup/share/bringup/local_setup.dsv
+[3.213s] -- Installing: /root/glad_ws/install/bringup/share/bringup/package.dsv
+[3.219s] -- Up-to-date: /root/glad_ws/install/bringup/share/ament_index/resource_index/packages/bringup
+[3.226s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/cmake/bringupConfig.cmake
+[3.238s] -- Up-to-date: /root/glad_ws/install/bringup/share/bringup/cmake/bringupConfig-version.cmake
+[3.238s] -- Installing: /root/glad_ws/install/bringup/share/bringup/package.xml
+[3.240s] Invoked command in '/root/glad_ws/build/bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/root/glad_ws/install/glad_voice:/root/glad_ws/install/glad_motor_controller:/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/bringup

@@ -1,0 +1,194 @@
+[0.537s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.537s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fa566b190>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa5868880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa5868880>>, mixin_verb=('build',))
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.147s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/glad_ws'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ignore_ament_install'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['colcon_pkg']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'colcon_pkg'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['colcon_meta']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'colcon_meta'
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extensions ['ros']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/myimu) by extension 'ros'
+[1.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/myimu' with type 'ros.ament_python' and name 'myimu'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[1.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.311s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 184 installed packages in /opt/ros/humble
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.452s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_args' from command line to 'None'
+[1.452s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_target' from command line to 'None'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_clean_cache' from command line to 'False'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_clean_first' from command line to 'False'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'cmake_force_configure' from command line to 'False'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'ament_cmake_args' from command line to 'None'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'catkin_cmake_args' from command line to 'None'
+[1.453s] Level 5:colcon.colcon_core.verb:set package 'myimu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.453s] DEBUG:colcon.colcon_core.verb:Building package 'myimu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/myimu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/myimu', 'merge_install': False, 'path': '/root/glad_ws/src/myimu', 'symlink_install': False, 'test_result_base': None}
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.455s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.456s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.456s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.456s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.456s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/glad_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/glad_ws/install/rplidar_ros', 'merge_install': False, 'path': '/root/glad_ws/src/rplidar_ros', 'symlink_install': False, 'test_result_base': None}
+[1.456s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.459s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.460s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/glad_ws/src/myimu' with build type 'ament_python'
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('myimu', 'ament_prefix_path')
+[1.479s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.ps1'
+[1.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.dsv'
+[1.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/ament_prefix_path.sh'
+[1.490s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.490s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.499s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/glad_ws/src/rplidar_ros' with build type 'ament_cmake'
+[1.499s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/glad_ws/src/rplidar_ros'
+[1.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.344s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/glad_ws/src/myimu'
+[2.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/rplidar_ros
+[3.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/src/myimu': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[5.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/src/myimu' returned '0': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[5.090s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu' for CMake module files
+[5.092s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu' for CMake config files
+[5.097s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib'
+[5.099s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/bin'
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib/pkgconfig/myimu.pc'
+[5.102s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/lib/python3.10/site-packages'
+[5.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('myimu', 'pythonpath')
+[5.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.ps1'
+[5.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.dsv'
+[5.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/myimu/share/myimu/hook/pythonpath.sh'
+[5.126s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/myimu/bin'
+[5.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(myimu)
+[5.132s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.ps1'
+[5.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/myimu/share/myimu/package.dsv'
+[5.145s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.sh'
+[5.151s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.bash'
+[5.157s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/myimu/share/myimu/package.zsh'
+[5.162s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/myimu/share/colcon-core/packages/myimu)
+[5.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/rplidar_ros
+[5.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[5.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/glad_ws/build/rplidar_ros -- -j4 -l4
+[5.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/glad_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros
+[5.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.861s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake module files
+[5.863s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake config files
+[5.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/glad_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/glad_ws/build/rplidar_ros
+[5.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.872s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib'
+[5.873s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[5.873s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.874s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[5.875s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[5.877s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.880s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.882s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.884s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.888s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[5.889s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake module files
+[5.891s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros' for CMake config files
+[5.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[5.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[5.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[5.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[5.901s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[5.903s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[5.904s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[5.905s] Level 1:colcon.colcon_core.environment:checking '/root/glad_ws/install/rplidar_ros/bin'
+[5.906s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[5.909s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[5.913s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[5.915s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[5.917s] INFO:colcon.colcon_core.shell:Creating package script '/root/glad_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[5.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/glad_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[5.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.923s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.966s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.967s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.975s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[5.975s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.977s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.ps1'
+[5.981s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/glad_ws/install/_local_setup_util_ps1.py'
+[5.988s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.ps1'
+[5.992s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.sh'
+[5.995s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/glad_ws/install/_local_setup_util_sh.py'
+[5.998s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.sh'
+[6.004s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.bash'
+[6.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.bash'
+[6.015s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/glad_ws/install/local_setup.zsh'
+[6.018s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/glad_ws/install/setup.zsh'

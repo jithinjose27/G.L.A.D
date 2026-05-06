@@ -1,0 +1,22 @@
+[4.950s] Invoking command in '/root/glad_ws/src/myimu': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[6.108s] running egg_info
+[6.115s] writing ../../build/myimu/myimu.egg-info/PKG-INFO
+[6.120s] writing dependency_links to ../../build/myimu/myimu.egg-info/dependency_links.txt
+[6.121s] writing entry points to ../../build/myimu/myimu.egg-info/entry_points.txt
+[6.122s] writing requirements to ../../build/myimu/myimu.egg-info/requires.txt
+[6.122s] writing top-level names to ../../build/myimu/myimu.egg-info/top_level.txt
+[6.130s] reading manifest file '../../build/myimu/myimu.egg-info/SOURCES.txt'
+[6.152s] writing manifest file '../../build/myimu/myimu.egg-info/SOURCES.txt'
+[6.153s] running build
+[6.153s] running build_py
+[6.154s] running install
+[6.154s] running install_lib
+[6.161s] running install_data
+[6.163s] running install_egg_info
+[6.164s] removing '/root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu-0.0.0-py3.10.egg-info' (and everything under it)
+[6.165s] Copying ../../build/myimu/myimu.egg-info to /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu-0.0.0-py3.10.egg-info
+[6.171s] running install_scripts
+[6.262s] Installing imuodom script to /root/glad_ws/install/myimu/lib/myimu
+[6.266s] Installing imupub script to /root/glad_ws/install/myimu/lib/myimu
+[6.270s] writing list of installed files to '/root/glad_ws/build/myimu/install.log'
+[6.450s] Invoked command in '/root/glad_ws/src/myimu' returned '0': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data

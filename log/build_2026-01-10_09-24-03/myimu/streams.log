@@ -1,0 +1,39 @@
+[2.371s] Invoking command in '/root/glad_ws/src/myimu': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data
+[3.269s] running egg_info
+[3.269s] creating ../../build/myimu/myimu.egg-info
+[3.329s] writing ../../build/myimu/myimu.egg-info/PKG-INFO
+[3.332s] writing dependency_links to ../../build/myimu/myimu.egg-info/dependency_links.txt
+[3.333s] writing entry points to ../../build/myimu/myimu.egg-info/entry_points.txt
+[3.334s] writing requirements to ../../build/myimu/myimu.egg-info/requires.txt
+[3.334s] writing top-level names to ../../build/myimu/myimu.egg-info/top_level.txt
+[3.334s] writing manifest file '../../build/myimu/myimu.egg-info/SOURCES.txt'
+[3.340s] reading manifest file '../../build/myimu/myimu.egg-info/SOURCES.txt'
+[3.344s] writing manifest file '../../build/myimu/myimu.egg-info/SOURCES.txt'
+[3.346s] running build
+[3.346s] running build_py
+[3.350s] creating /root/glad_ws/build/myimu/build
+[3.350s] creating /root/glad_ws/build/myimu/build/lib
+[3.351s] creating /root/glad_ws/build/myimu/build/lib/myimu
+[3.351s] copying myimu/__init__.py -> /root/glad_ws/build/myimu/build/lib/myimu
+[3.352s] copying myimu/imupublisher.py -> /root/glad_ws/build/myimu/build/lib/myimu
+[3.352s] running install
+[3.352s] running install_lib
+[3.358s] creating /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu
+[3.359s] copying /root/glad_ws/build/myimu/build/lib/myimu/__init__.py -> /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu
+[3.359s] copying /root/glad_ws/build/myimu/build/lib/myimu/imupublisher.py -> /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu
+[3.360s] byte-compiling /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu/__init__.py to __init__.cpython-310.pyc
+[3.363s] byte-compiling /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu/imupublisher.py to imupublisher.cpython-310.pyc
+[3.365s] running install_data
+[3.366s] creating /root/glad_ws/install/myimu/share/ament_index
+[3.366s] creating /root/glad_ws/install/myimu/share/ament_index/resource_index
+[3.367s] creating /root/glad_ws/install/myimu/share/ament_index/resource_index/packages
+[3.367s] copying resource/myimu -> /root/glad_ws/install/myimu/share/ament_index/resource_index/packages
+[3.370s] copying package.xml -> /root/glad_ws/install/myimu/share/myimu
+[3.370s] creating /root/glad_ws/install/myimu/share/myimu/config
+[3.371s] copying config/bno055_config.yaml -> /root/glad_ws/install/myimu/share/myimu/config
+[3.371s] running install_egg_info
+[3.376s] Copying ../../build/myimu/myimu.egg-info to /root/glad_ws/install/myimu/lib/python3.10/site-packages/myimu-0.0.0-py3.10.egg-info
+[3.386s] running install_scripts
+[3.463s] Installing imupub script to /root/glad_ws/install/myimu/lib/myimu
+[3.465s] writing list of installed files to '/root/glad_ws/build/myimu/install.log'
+[3.598s] Invoked command in '/root/glad_ws/src/myimu' returned '0': PYTHONPATH=/root/glad_ws/build/myimu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/myimu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/myimu build --build-base /root/glad_ws/build/myimu/build install --record /root/glad_ws/build/myimu/install.log --single-version-externally-managed install_data

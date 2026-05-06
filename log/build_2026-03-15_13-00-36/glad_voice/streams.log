@@ -1,0 +1,24 @@
+[2.082s] Invoking command in '/root/glad_ws/src/glad_voice': PYTHONPATH=/root/glad_ws/build/glad_voice/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_voice/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_voice build --build-base /root/glad_ws/build/glad_voice/build install --record /root/glad_ws/build/glad_voice/install.log --single-version-externally-managed install_data
+[2.914s] running egg_info
+[2.915s] writing ../../build/glad_voice/glad_voice.egg-info/PKG-INFO
+[2.915s] writing dependency_links to ../../build/glad_voice/glad_voice.egg-info/dependency_links.txt
+[2.917s] writing entry points to ../../build/glad_voice/glad_voice.egg-info/entry_points.txt
+[2.918s] writing requirements to ../../build/glad_voice/glad_voice.egg-info/requires.txt
+[2.919s] writing top-level names to ../../build/glad_voice/glad_voice.egg-info/top_level.txt
+[2.926s] reading manifest file '../../build/glad_voice/glad_voice.egg-info/SOURCES.txt'
+[2.929s] writing manifest file '../../build/glad_voice/glad_voice.egg-info/SOURCES.txt'
+[2.930s] running build
+[2.930s] running build_py
+[2.931s] copying glad_voice/voice_assistant.py -> /root/glad_ws/build/glad_voice/build/lib/glad_voice
+[2.931s] running install
+[2.933s] running install_lib
+[2.935s] copying /root/glad_ws/build/glad_voice/build/lib/glad_voice/voice_assistant.py -> /root/glad_ws/install/glad_voice/lib/python3.10/site-packages/glad_voice
+[2.938s] byte-compiling /root/glad_ws/install/glad_voice/lib/python3.10/site-packages/glad_voice/voice_assistant.py to voice_assistant.cpython-310.pyc
+[2.943s] running install_data
+[2.944s] running install_egg_info
+[2.951s] removing '/root/glad_ws/install/glad_voice/lib/python3.10/site-packages/glad_voice-0.0.0-py3.10.egg-info' (and everything under it)
+[2.952s] Copying ../../build/glad_voice/glad_voice.egg-info to /root/glad_ws/install/glad_voice/lib/python3.10/site-packages/glad_voice-0.0.0-py3.10.egg-info
+[2.955s] running install_scripts
+[3.027s] Installing voice_assistant script to /root/glad_ws/install/glad_voice/lib/glad_voice
+[3.028s] writing list of installed files to '/root/glad_ws/build/glad_voice/install.log'
+[3.137s] Invoked command in '/root/glad_ws/src/glad_voice' returned '0': PYTHONPATH=/root/glad_ws/build/glad_voice/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_voice/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_voice build --build-base /root/glad_ws/build/glad_voice/build install --record /root/glad_ws/build/glad_voice/install.log --single-version-externally-managed install_data

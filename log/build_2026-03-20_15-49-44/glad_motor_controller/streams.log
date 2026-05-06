@@ -1,0 +1,21 @@
+[4.817s] Invoking command in '/root/glad_ws/src/glad_motor_controller': PYTHONPATH=/root/glad_ws/build/glad_motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_motor_controller build --build-base /root/glad_ws/build/glad_motor_controller/build install --record /root/glad_ws/build/glad_motor_controller/install.log --single-version-externally-managed install_data
+[5.926s] running egg_info
+[5.929s] writing ../../build/glad_motor_controller/glad_motor_controller.egg-info/PKG-INFO
+[5.931s] writing dependency_links to ../../build/glad_motor_controller/glad_motor_controller.egg-info/dependency_links.txt
+[5.933s] writing entry points to ../../build/glad_motor_controller/glad_motor_controller.egg-info/entry_points.txt
+[5.935s] writing requirements to ../../build/glad_motor_controller/glad_motor_controller.egg-info/requires.txt
+[5.935s] writing top-level names to ../../build/glad_motor_controller/glad_motor_controller.egg-info/top_level.txt
+[5.942s] reading manifest file '../../build/glad_motor_controller/glad_motor_controller.egg-info/SOURCES.txt'
+[5.946s] writing manifest file '../../build/glad_motor_controller/glad_motor_controller.egg-info/SOURCES.txt'
+[5.948s] running build
+[5.950s] running build_py
+[5.952s] running install
+[5.954s] running install_lib
+[5.959s] running install_data
+[5.962s] running install_egg_info
+[5.968s] removing '/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages/glad_motor_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[5.972s] Copying ../../build/glad_motor_controller/glad_motor_controller.egg-info to /root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages/glad_motor_controller-0.0.0-py3.10.egg-info
+[5.978s] running install_scripts
+[6.076s] Installing motor_driver script to /root/glad_ws/install/glad_motor_controller/lib/glad_motor_controller
+[6.079s] writing list of installed files to '/root/glad_ws/build/glad_motor_controller/install.log'
+[6.258s] Invoked command in '/root/glad_ws/src/glad_motor_controller' returned '0': PYTHONPATH=/root/glad_ws/build/glad_motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/glad_ws/install/glad_motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/glad_motor_controller build --build-base /root/glad_ws/build/glad_motor_controller/build install --record /root/glad_ws/build/glad_motor_controller/install.log --single-version-externally-managed install_data
