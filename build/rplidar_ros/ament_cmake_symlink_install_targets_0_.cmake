@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/root/glad_ws/build/rplidar_ros/rplidar_node" "/root/glad_ws/build/rplidar_ros/rplidar_composition" "/root/glad_ws/build/rplidar_ros/rplidar_client" "TARGETS" "rplidar_node" "rplidar_composition" "rplidar_client" "RUNTIME_DESTINATION" "lib/rplidar_ros")

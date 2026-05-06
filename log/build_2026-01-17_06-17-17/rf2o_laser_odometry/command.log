@@ -1,2 +1,0 @@
-Invoking command in '/root/glad_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/rf2o_laser_odometry
-Invoked command in '/root/glad_ws/build/rf2o_laser_odometry' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/glad_ws/install/myimu:/opt/ros/humble /usr/bin/cmake /root/glad_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/root/glad_ws/install/rf2o_laser_odometry

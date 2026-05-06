@@ -1,3 +1,0 @@
-[console_scripts]
-voice_assistant = glad_voice.voice_assistant:main
-

@@ -1,9 +1,0 @@
-/root/glad_ws/build/bringup/CMakeFiles/uninstall.dir
-/root/glad_ws/build/bringup/CMakeFiles/bringup_uninstall.dir
-/root/glad_ws/build/bringup/CMakeFiles/test.dir
-/root/glad_ws/build/bringup/CMakeFiles/edit_cache.dir
-/root/glad_ws/build/bringup/CMakeFiles/rebuild_cache.dir
-/root/glad_ws/build/bringup/CMakeFiles/list_install_components.dir
-/root/glad_ws/build/bringup/CMakeFiles/install.dir
-/root/glad_ws/build/bringup/CMakeFiles/install/local.dir
-/root/glad_ws/build/bringup/CMakeFiles/install/strip.dir
