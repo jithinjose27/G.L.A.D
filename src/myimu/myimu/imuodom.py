@@ -5,21 +5,22 @@ from sensor_msgs.msg import Imu
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
 from tf2_ros import TransformBroadcaster
-import math
-import numpy as np
+
 
 class ImuToOdom(Node):
     def __init__(self):
-        super().__init__('imu_to_odom_node')
+        super().__init__("imu_to_odom_node")
 
         # 1. Configuration
-        self.declare_parameter('imu_topic', '/imu/data')
-        self.declare_parameter('odom_topic', '/imu/odometry')
-        self.declare_parameter('publish_tf', False) # Set to True if you need it to link frames in RViz
+        self.declare_parameter("imu_topic", "/imu/data")
+        self.declare_parameter("odom_topic", "/imu/odometry")
+        self.declare_parameter(
+            "publish_tf", False
+        )  # Set to True if you need it to link frames in RViz
 
-        imu_topic = self.get_parameter('imu_topic').value
-        self.odom_topic = self.get_parameter('odom_topic').value
-        self.publish_tf = self.get_parameter('publish_tf').value
+        imu_topic = self.get_parameter("imu_topic").value
+        self.odom_topic = self.get_parameter("odom_topic").value
+        self.publish_tf = self.get_parameter("publish_tf").value
 
         # 2. State Variables (Position is no longer integrated)
         self.x = 0.0
@@ -37,22 +38,21 @@ class ImuToOdom(Node):
 
     def imu_callback(self, msg):
         current_time = self.get_clock().now()
-        
+
         # Handle first message
         if self.last_time is None:
             self.last_time = current_time
             return
 
         # Calculate dt (delta time)
-        dt = (current_time - self.last_time).nanoseconds / 1e9
         self.last_time = current_time
 
         # --- MATH SECTION ---
-        
+
         # 1. Extract Orientation (Quaternion)
         # This is the only thing we care about now
         q = msg.orientation
-        
+
         # 2. LOCK POSITION TO ZERO
         # We explicitly ignore acceleration and velocity to prevent drift.
         self.x = 0.0
@@ -72,7 +72,7 @@ class ImuToOdom(Node):
         odom.pose.pose.position.x = 0.0
         odom.pose.pose.position.y = 0.0
         odom.pose.pose.position.z = 0.0
-        
+
         # Orientation (Directly from IMU - this is what we are testing)
         odom.pose.pose.orientation = q
 
@@ -95,6 +95,7 @@ class ImuToOdom(Node):
             t.transform.rotation = q
             self.tf_broadcaster.sendTransform(t)
 
+
 def main(args=None):
     rclpy.init(args=args)
     node = ImuToOdom()
@@ -105,5 +106,6 @@ def main(args=None):
     node.destroy_node()
     rclpy.shutdown()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

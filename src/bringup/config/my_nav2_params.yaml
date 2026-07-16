@@ -219,7 +219,7 @@ global_costmap:
       use_sim_time: false
       transform_tolerance: 1.0  # <--- ADD THIS LINE HERE!
       # 1. Comment out or delete the old circle radius!
-      robot_radius: 0.35  
+      robot_radius: 0.35
 
       # 2. Add the exact corners of your 50x50cm square [Front-Left, Front-Right, Back-Right, Back-Left]
       # footprint: "[[0.25, 0.25], [0.25, -0.25], [-0.25, -0.25], [-0.25, 0.25]]"

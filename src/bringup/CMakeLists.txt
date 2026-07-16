@@ -13,7 +13,7 @@ find_package(ament_cmake REQUIRED)
 # ========================================================================
 
 # 1. Install the launch directory
-# This copies everything in your local 'launch/' folder to the 
+# This copies everything in your local 'launch/' folder to the
 # package's share directory where ROS looks for it.
 install(DIRECTORY
   launch config
@@ -21,7 +21,7 @@ install(DIRECTORY
 )
 
 # 2. (Optional) Install config directory
-# Since you are using YAML files (like bno055_config.yaml), 
+# Since you are using YAML files (like bno055_config.yaml),
 # you should uncomment this if you have a 'config' folder.
 # install(DIRECTORY
 #   config
