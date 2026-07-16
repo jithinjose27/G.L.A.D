@@ -2,6 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
+from geometry_msgs.msg import Twist
 
 
 class GladNavigationNode(Node):
@@ -9,6 +10,9 @@ class GladNavigationNode(Node):
         super().__init__("glad_navigation_node")
 
         self.declare_parameter("use_sim_time", False)
+
+        self.cmd_vel_pub = self.create_publisher(Twist, "/cmd_vel/nav", 10)
+
         self.get_logger().info("GladNavigationNode started")
 
     def destroy_node(self):

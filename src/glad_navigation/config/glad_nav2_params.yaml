@@ -215,7 +215,7 @@ smoother_server:
 
 behavior_server:
   ros__parameters:
-    cmd_vel_topic: /cmd_vel_nav
+    cmd_vel_topic: /cmd_vel/nav
     local_costmap_topic: local_costmap/costmap_raw
     global_costmap_topic: global_costmap/costmap_raw
     local_footprint_topic: local_costmap/published_footprint

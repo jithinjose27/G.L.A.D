@@ -49,6 +49,7 @@ def generate_launch_description():
                 name="controller_server",
                 parameters=[config_path],
                 output="screen",
+                remappings=[("cmd_vel", "/cmd_vel/nav")],
             ),
             Node(
                 package="nav2_planner",

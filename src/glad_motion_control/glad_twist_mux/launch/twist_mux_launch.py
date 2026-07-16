@@ -1,16 +1,16 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 import os
 from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
     config_file = os.path.join(
-        get_package_share_directory("glad_motor_controller"),
+        get_package_share_directory("glad_twist_mux"),
         "config",
-        "motor_controller_params.yaml",
+        "twist_mux.yaml",
     )
 
     return LaunchDescription(
@@ -18,12 +18,12 @@ def generate_launch_description():
             DeclareLaunchArgument(
                 "config_file",
                 default_value=config_file,
-                description="Path to motor controller parameters YAML file",
+                description="Path to twist_mux parameters YAML file",
             ),
             Node(
-                package="glad_motor_controller",
-                executable="motor_driver",
-                name="esp32_motor_bridge",
+                package="glad_twist_mux",
+                executable="twist_mux_node",
+                name="twist_mux",
                 output="screen",
                 parameters=[LaunchConfiguration("config_file")],
             ),
