@@ -6,7 +6,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             Node(
-                package="glad_imu",
+                package="glad_imu_publisher",
                 executable="imupub",
                 name="imu_hardware_driver",
                 output="screen",
@@ -16,8 +16,8 @@ def generate_launch_description():
                 parameters=[],
             ),
             Node(
-                package="imu_filter_madgwick",
-                executable="imu_filter_madgwick_node",
+                package="glad_imu_filter",
+                executable="imu_madgwick",
                 name="imu_filter",
                 output="screen",
                 respawn=True,

@@ -58,7 +58,7 @@ def generate_launch_description():
 
     # --- B. IMU HARDWARE ---
     imu_driver_node = Node(
-        package="myimu",
+        package="glad_imu_publisher",
         executable="imupub",
         name="imu_hardware_driver",
         output="screen",
@@ -148,15 +148,15 @@ def generate_launch_description():
     )
 
     madgwick_node = Node(
-        package="imu_filter_madgwick",
-        executable="imu_filter_madgwick_node",
+        package="glad_imu_filter",
+        executable="imu_madgwick",
         name="imu_filter",
         output="screen",
         respawn=True,
         respawn_delay=1.0,
         parameters=[
             {
-                "use_mag": False,
+                "use_mag": True,
                 "publish_tf": False,
                 "world_frame": "enu",
                 "fixed_frame": "odom",

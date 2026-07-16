@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from glob import glob
 
-package_name = "glad_imu"
+package_name = "glad_imu_filter"
 
 setup(
     name=package_name,
@@ -17,7 +17,7 @@ setup(
     zip_safe=True,
     maintainer="root",
     maintainer_email="jithin27j@gmail.com",
-    description="GLAD IMU driver package",
+    description="GLAD IMU Madgwick filter package",
     license="TODO: License declaration",
     extras_require={
         "test": [
@@ -26,8 +26,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "imupub=glad_imu.imupublisher:main",
-            "imuodom=glad_imu.imuodom:main",
+            "imu_madgwick=glad_imu_filter.imu_madgwick_node:main",
         ],
     },
 )

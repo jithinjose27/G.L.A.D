@@ -3,9 +3,9 @@
 <package format="3">
   <name>glad_motor_controller</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ESP32-based differential drive motor controller with odometry</description>
   <maintainer email="jithin27j@gmail.com">root</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache License 2.0</license>
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>

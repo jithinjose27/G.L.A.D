@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from glob import glob
 
-package_name = "myimu"
+package_name = "glad_imu_publisher"
 
 setup(
     name=package_name,
@@ -17,7 +17,7 @@ setup(
     zip_safe=True,
     maintainer="root",
     maintainer_email="jithin27j@gmail.com",
-    description="TODO: Package description",
+    description="GLAD IMU driver package",
     license="TODO: License declaration",
     extras_require={
         "test": [
@@ -26,8 +26,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "imupub=myimu.imupublisher:main",
-            "imuodom=myimu.imuodom:main",
+            "imupub=glad_imu_publisher.imu_publisher_node:main",
         ],
     },
 )

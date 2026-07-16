@@ -1,0 +1,9 @@
+/**:
+    ros__parameters:
+        serial_port: "/dev/ttyUSB1"
+        baud_rate: 115200
+        wheel_radius: 0.04
+        wheel_separation: 0.325
+        ticks_per_rev: 996.8
+        max_pwm: 255.0
+        max_rpm: 100.0

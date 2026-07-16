@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import find_packages, setup
 
 package_name = "glad_motor_controller"
@@ -9,21 +11,24 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
+        (
+            os.path.join("share", package_name, "launch"),
+            glob("launch/*.launch.py"),
+        ),
+        (
+            os.path.join("share", package_name, "config"),
+            glob("config/*.yaml"),
+        ),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
     maintainer="root",
     maintainer_email="jithin27j@gmail.com",
-    description="TODO: Package description",
-    license="TODO: License declaration",
-    extras_require={
-        "test": [
-            "pytest",
-        ],
-    },
+    description="ESP32-based differential drive motor controller with odometry",
+    license="Apache License 2.0",
     entry_points={
         "console_scripts": [
-            "motor_driver=glad_motor_controller.motor_driver:main",
+            "motor_controller_node=glad_motor_controller.motor_controller_node:main",
         ],
     },
 )

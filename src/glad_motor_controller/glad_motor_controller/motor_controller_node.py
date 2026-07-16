@@ -14,24 +14,22 @@ class ESP32MotorBridge(Node):
     def __init__(self):
         super().__init__("esp32_motor_bridge")
 
-        # --- Parameters (Adjust these to match your robot!) ---
         self.declare_parameter("serial_port", "/dev/ttyUSB1")
         self.declare_parameter("baud_rate", 115200)
+        self.declare_parameter("wheel_radius", 0.04)
+        self.declare_parameter("wheel_separation", 0.325)
+        self.declare_parameter("ticks_per_rev", 996.8)
+        self.declare_parameter("max_pwm", 255.0)
+        self.declare_parameter("max_rpm", 100.0)
 
-        # Robot Physical Properties
-        self.wheel_radius = 0.04  # Meters (3.2 cm)
-        self.wheel_separation = 0.325  # Meters (19.5 cm) distance between wheels
+        self.wheel_radius = self.get_parameter("wheel_radius").value
+        self.wheel_separation = self.get_parameter("wheel_separation").value
+        self.ticks_per_rev = self.get_parameter("ticks_per_rev").value
+        self.max_pwm = self.get_parameter("max_pwm").value
+        self.max_rpm = self.get_parameter("max_rpm").value
 
-        # Encoder Math: 7 PPR * 2 (Change Interrupt) * 71.2 Gear Ratio
-        self.ticks_per_rev = 996.8
-
-        # Motor Limits
-        self.max_pwm = 255.0  # Max PWM the ESP32 code accepts
-        self.max_rpm = 100.0  # Max RPM of your motor at 12V
-
-        # --- Serial Connection ---
-        port = self.get_parameter("serial_port").get_parameter_value().string_value
-        baud = self.get_parameter("baud_rate").get_parameter_value().integer_value
+        port = self.get_parameter("serial_port").value
+        baud = self.get_parameter("baud_rate").value
 
         try:
             self.ser = serial.Serial(port, baud, timeout=1)

@@ -13,8 +13,7 @@ class BNO055Driver(Node):
     def __init__(self):
         super().__init__("bno055_driver")
 
-        # 1. Setup Parameters and Load YAML
-        pkg_share = get_package_share_directory("myimu")
+        pkg_share = get_package_share_directory("glad_imu_publisher")
         default_config_path = os.path.join(pkg_share, "config", "bno055_config.yaml")
         self.declare_parameter("config_file", default_config_path)
         config_path = self.get_parameter("config_file").value
@@ -35,7 +34,6 @@ class BNO055Driver(Node):
         except Exception as e:
             self.get_logger().warn(f"Could not load config: {e}. Using raw values.")
 
-        # 2. Setup Hardware
         try:
             i2c = busio.I2C(board.SCL, board.SDA)
             self.sensor = adafruit_bno055.BNO055_I2C(i2c)
@@ -43,11 +41,10 @@ class BNO055Driver(Node):
             self.get_logger().error(f"Sensor Connection Failed: {e}")
             return
 
-        # 3. Publishers
         self.imu_raw_pub = self.create_publisher(Imu, "/imu/data_raw", 10)
         self.mag_pub = self.create_publisher(MagneticField, "/imu/mag", 10)
 
-        self.timer = self.create_timer(0.02, self.update_sensor)  # 50Hz
+        self.timer = self.create_timer(0.02, self.update_sensor)
 
     def apply_deadzone(self, val, threshold):
         if abs(val) < threshold:
@@ -55,7 +52,6 @@ class BNO055Driver(Node):
         return val
 
     def update_sensor(self):
-        # Read BNO055 Data
         gyro = self.sensor.gyro
         accel = self.sensor.acceleration
         mag = self.sensor.magnetic
@@ -65,12 +61,10 @@ class BNO055Driver(Node):
 
         current_time = self.get_clock().now().to_msg()
 
-        # --- PREPARE IMU MSG (Accel + Gyro) ---
         imu_msg = Imu()
         imu_msg.header.stamp = current_time
         imu_msg.header.frame_id = "imu_link"
 
-        # 1. GYROSCOPE (Flip Y and Z for Upside-Down mount)
         gx = self.apply_deadzone(
             gyro[0] - self.offsets["gyro"]["x"], self.deadzones["gyro"]
         )
@@ -81,9 +75,6 @@ class BNO055Driver(Node):
             gyro[2] - self.offsets["gyro"]["z"], self.deadzones["gyro"]
         )
 
-        # 2. ACCELEROMETER (Flip Y and Z, plus BNO055 gravity correction)
-        # Normally ROS wants -ax, -ay, -az.
-        # Flipped 180 degrees, the Y and Z negatives cancel out!
         ax = -self.apply_deadzone(accel[0], self.deadzones["accel"])
         ay = self.apply_deadzone(accel[1], self.deadzones["accel"])
         az = self.apply_deadzone(accel[2], self.deadzones["accel"])
@@ -121,19 +112,17 @@ class BNO055Driver(Node):
 
         self.imu_raw_pub.publish(imu_msg)
 
-        # --- PREPARE MAG MSG ---
         mag_msg = MagneticField()
         mag_msg.header.stamp = current_time
         mag_msg.header.frame_id = "imu_link"
 
-        # 3. MAGNETOMETER (Flip Y and Z for Upside-Down mount)
         raw_mag_x = (mag[0] - self.offsets["mag"]["x"]) * 1e-6
         raw_mag_y = (mag[1] - self.offsets["mag"]["y"]) * 1e-6
         raw_mag_z = (mag[2] - self.offsets["mag"]["z"]) * 1e-6
 
         mag_msg.magnetic_field.x = raw_mag_x
-        mag_msg.magnetic_field.y = -raw_mag_y  # Flipped!
-        mag_msg.magnetic_field.z = -raw_mag_z  # Flipped!
+        mag_msg.magnetic_field.y = -raw_mag_y
+        mag_msg.magnetic_field.z = -raw_mag_z
 
         self.mag_pub.publish(mag_msg)
 
