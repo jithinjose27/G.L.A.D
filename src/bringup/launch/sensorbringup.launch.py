@@ -21,8 +21,13 @@ def generate_launch_description():
     pkg_share = get_package_share_directory("bringup")
     ekf_config_path = os.path.join(pkg_share, "config", "ekf_config.yaml")
 
-    # NEW: Path to the laser filter configuration
+    # Path to the laser filter configuration
     laser_filter_path = os.path.join(pkg_share, "config", "laser_filter.yaml")
+
+    # Path to SLAM Toolbox configuration
+    slam_toolbox_config_path = os.path.join(
+        get_package_share_directory("glad_mapping"), "config", "slam_toolbox.yaml"
+    )
 
     # ==========================================
     # 2. NODES
@@ -174,6 +179,15 @@ def generate_launch_description():
         remappings=[("odometry/filtered", "odom")],
     )
 
+    # --- E. SLAM TOOLBOX ---
+    slam_toolbox_node = Node(
+        package="slam_toolbox",
+        executable="async_slam_toolbox_node",
+        name="slam_toolbox",
+        parameters=[slam_toolbox_config_path],
+        output="screen",
+    )
+
     # ==========================================
     # 3. BUILD LAUNCH DESCRIPTION
     # ==========================================
@@ -193,6 +207,6 @@ def generate_launch_description():
             imu_driver_node,
             madgwick_node,
             motor_node,
-            TimerAction(period=3.0, actions=[rf2o_node, ekf_node]),
+            TimerAction(period=3.0, actions=[rf2o_node, ekf_node, slam_toolbox_node]),
         ]
     )
