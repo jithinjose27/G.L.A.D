@@ -2,6 +2,7 @@ glad_laser_filter:
   ros__parameters:
     input_scan_topic: /scan_unfiltered
     output_scan_topic: /scan
+    target_beams: 544
 
     filter1:
       name: angle

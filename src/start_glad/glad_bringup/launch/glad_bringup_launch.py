@@ -9,7 +9,6 @@ from launch.actions import (
 from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
 
@@ -42,7 +41,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             "map_yaml",
-            default_value="/home/inevitable/G.L.A.D/src/bringup/config/robotics_floor.yaml",
+            default_value="/home/inevitable/G.L.A.D/src/glad_maps/robotics_floor/robotics_floor.yaml",
             description="Absolute path to map YAML file (actively utilized when enable_slam:=false).",
         ),
     ]
@@ -101,63 +100,14 @@ def generate_launch_description():
     static_tf = GroupAction(
         [
             LogInfo(msg="[GLAD Bringup] 8. Mounting Static Transforms..."),
-            Node(
-                package="tf2_ros",
-                executable="static_transform_publisher",
-                name="base_to_laser",
-                arguments=[
-                    "--x",
-                    "0.10",
-                    "--y",
-                    "0.0",
-                    "--z",
-                    "0.05",
-                    "--yaw",
-                    "0.0",
-                    "--pitch",
-                    "0.0",
-                    "--roll",
-                    "0.0",
-                    "--frame-id",
-                    "base_link",
-                    "--child-frame-id",
-                    "laser",
-                ],
-            ),
-            Node(
-                package="tf2_ros",
-                executable="static_transform_publisher",
-                name="base_to_imu",
-                arguments=[
-                    "--x",
-                    "0.05",
-                    "--y",
-                    "0.0",
-                    "--z",
-                    "0.0",
-                    "--yaw",
-                    "0.0",
-                    "--pitch",
-                    "0.0",
-                    "--roll",
-                    "0.0",
-                    "--frame-id",
-                    "base_link",
-                    "--child-frame-id",
-                    "imu_link",
-                ],
-            ),
+            _include("glad_static_tf", "glad_static_tf_launch.py", base_args),
         ]
     )
 
     teleop_launch = GroupAction(
         [
             LogInfo(msg="[GLAD Bringup] 9. Activating Teleop and Motion Control..."),
-            _include(
-                "glad_teleop",
-                "teleop_launch.py",
-                {**base_args, "enable_teleop": LaunchConfiguration("enable_teleop")},
-            ),
+            _include("glad_teleop", "teleop_launch.py", base_args),
         ]
     )
 
@@ -179,13 +129,13 @@ def generate_launch_description():
             LogInfo(msg="========== GLAD SYSTEM BRINGUP LAUNCHED =========="),
             static_tf,
             glad_rplidar_launch,
-            TimerAction(period=1.5, actions=[glad_laser_filter_launch]),
-            TimerAction(period=2.5, actions=[glad_imu_publisher_launch]),
-            TimerAction(period=3.5, actions=[glad_imu_filter_launch]),
-            TimerAction(period=5.0, actions=[rf2o_laser_odometry_launch]),
-            TimerAction(period=6.0, actions=[glad_ekf_launch]),
-            TimerAction(period=8.0, actions=[slam_toolbox_launch]),
-            TimerAction(period=10.0, actions=[teleop_launch]),
-            TimerAction(period=14.0, actions=[glad_nav2_launch]),
+            TimerAction(period=1.0, actions=[glad_laser_filter_launch]),
+            TimerAction(period=1.5, actions=[glad_imu_publisher_launch]),
+            TimerAction(period=2.0, actions=[glad_imu_filter_launch]),
+            TimerAction(period=2.5, actions=[rf2o_laser_odometry_launch]),
+            TimerAction(period=3.0, actions=[glad_ekf_launch]),
+            TimerAction(period=3.5, actions=[slam_toolbox_launch]),
+            TimerAction(period=4.0, actions=[teleop_launch]),
+            TimerAction(period=6.0, actions=[glad_nav2_launch]),
         ]
     )

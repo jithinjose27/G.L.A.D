@@ -8,14 +8,10 @@ import subprocess
 import tempfile
 import re
 
-# The modern Google GenAI SDK
 from google import genai
 from google.genai import types
 
 
-# ------------------------------------------------------------
-# 1. HARDWARE AUTO-DETECT FOR SPEAKER
-# ------------------------------------------------------------
 def find_usb_speaker():
     speaker_hw = "default"
     try:
@@ -34,14 +30,9 @@ def find_usb_speaker():
 
 SPEAKER_HW = find_usb_speaker()
 
-# ------------------------------------------------------------
-# 2. GEMINI AI INITIALIZATION & GENERATION
-# ------------------------------------------------------------
-# ⚠️ PASTE YOUR REAL API KEY HERE!
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyA2MNXONtoeuV2oR1g5T8U4ElcWbBhi6f0")
 GEMINI_MODEL_NAME = "gemini-2.5-flash-lite"
 
-# Tell Gemini exactly who it is so it stays in character
 SYSTEM_INSTRUCTION = (
     "You are G.L.A.D. (Guide Lab Assistant Droid), a helpful and intelligent "
     "autonomous tour guide robot working in the Robotics and Automation department. "
@@ -64,17 +55,15 @@ def init_gemini():
 
 
 def generate_speech(client, prompt):
-    """Pings Gemini to write a custom speech on the spot."""
     if not client:
         return "I am sorry, my AI brain is disconnected."
-
     try:
         response = client.models.generate_content(
             model=GEMINI_MODEL_NAME,
             contents=prompt,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
-                temperature=0.7,  # Slight creativity so it sounds different each time
+                temperature=0.7,
             ),
         )
         return response.text.strip()
@@ -83,29 +72,21 @@ def generate_speech(client, prompt):
         return "I apologize, I am having trouble connecting to my knowledge base right now."
 
 
-# ------------------------------------------------------------
-# 3. TEXT-TO-SPEECH FUNCTION
-# ------------------------------------------------------------
 def speak(text):
-    """Generates an MP3 from text and plays it out loud."""
     print(f"\n🤖 G.L.A.D.: {text}\n")
     clean_text = text.replace("*", "").replace("#", "")
     if not clean_text.strip():
         return
-
     try:
         with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
             temp_mp3 = tmp.name
-
         tts = gTTS(text=clean_text, lang="en", slow=False)
         tts.save(temp_mp3)
-
         subprocess.run(
             ["mpg123", "-a", SPEAKER_HW, "-q", temp_mp3],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
-
         try:
             os.remove(temp_mp3)
         except Exception:
@@ -114,9 +95,6 @@ def speak(text):
         print(f"🔊 TTS Error: {e}")
 
 
-# ------------------------------------------------------------
-# 4. MAIN NAVIGATION TOUR
-# ------------------------------------------------------------
 def main():
     rclpy.init()
 
@@ -125,26 +103,22 @@ def main():
 
     navigator = BasicNavigator()
 
-    # --- AUTO-INITIALIZE STARTING POSITION ---
     print("Setting initial pose...")
     initial_pose = PoseStamped()
     initial_pose.header.frame_id = "map"
     initial_pose.header.stamp = navigator.get_clock().now().to_msg()
 
-    # Change these to the exact X and Y coordinates of G.L.A.D.'s charging dock / start point
     initial_pose.pose.position.x = 0.0
     initial_pose.pose.position.y = 0.0
     initial_pose.pose.orientation.w = 1.0
 
     navigator.setInitialPose(initial_pose)
-    # -----------------------------------------
 
     print("Waiting for Nav2 to become active...")
     navigator.waitUntilNav2Active()
 
     speak("Navigation systems are online. Let's begin the tour.")
 
-    # Waypoints with AI Prompts instead of hardcoded text!
     waypoints = [
         {
             "name": "Point 1",
@@ -188,19 +162,14 @@ def main():
         navigator.goToPose(goal_pose)
 
         while not navigator.isTaskComplete():
-            pass  # Robot is driving...
+            pass
 
         result = navigator.getResult()
         if result == TaskResult.SUCCEEDED:
             print(f"Successfully arrived at {point['name']}!")
-
-            # 1. Ask Gemini to generate the speech in real-time
             print("🤖 Generating speech...")
             generated_speech = generate_speech(gemini_client, point["prompt"])
-
-            # 2. Speak the AI-generated text
             speak(generated_speech)
-
         elif result == TaskResult.FAILED:
             print(f"Failed to reach {point['name']}!")
             speak(
